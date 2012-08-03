@@ -1,0 +1,30 @@
+{
+  "name": "view",
+  "version": "0.0.0",
+  "description": "Base class for views.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sailjs/view.git"
+  },
+  "bugs": {
+    "url": "http://github.com/sailjs/view/issues"
+  },
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "view",
+  "amd": {},
+  "volo": {
+    "dependencies": {
+      "anchor": "github:anchorjs/anchor"
+    }
+  }
+}
