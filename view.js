@@ -1,14 +1,14 @@
-define(['sail',
-        'anchor/events',
-        'anchor/class'],
-function(sail, events, clazz) {
+define(['events',
+        'class',
+        'sail'],
+function(Emitter, clazz, sail) {
   
   function View(el, options) {
     View.super_.call(this);
     
     if (typeof el == 'string') {
-      var render = sail.render
-        , $ = sail.$;
+      var $ = sail.$
+        , render = sail.render;
       
       var out = render(el, options);
       if (typeof out == 'string') {
@@ -20,7 +20,7 @@ function(sail, events, clazz) {
       this.el = el;
     }
   }
-  clazz.inherits(View, events.EventEmitter);
+  clazz.inherits(View, Emitter);
   
   return View;
 });
