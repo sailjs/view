@@ -23,10 +23,11 @@
   "main": "view",
   "amd": {},
   "volo": {
+    "baseUrl": "vendor",
     "dependencies": {
-      "class": "github:anchorjs/class",
-      "events": "github:anchorjs/events",
-      "sail": "github:sailjs/sail"
+      "class": "github:anchorjs/class/master",
+      "events": "github:anchorjs/events/master",
+      "sail": "github:sailjs/sail/master"
     }
   }
 }
