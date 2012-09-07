@@ -5,7 +5,7 @@ function(View, chai) {
 
   describe("view", function() {
     
-    it('shoud export constructor', function() {
+    it('should export constructor', function() {
       expect(View).to.exist;
       expect(View).to.be.a('function');
     });
