@@ -1,7 +1,5 @@
-define(['view/view',
-        'chai'],
-function(View, chai) {
-  var expect = chai.expect;
+define(['view'],
+function(View) {
 
   describe("view", function() {
     
