@@ -9,7 +9,7 @@ require.config({
     { name: 'view', location: '../../../..', main: 'view' },
     { name: 'events' },
     { name: 'dom' },
-    { name: 'sail' },
+    { name: 'render' },
     { name: 'mocha-cloud', location: '../support', main: 'mocha-cloud' }
   ],
   shim: {

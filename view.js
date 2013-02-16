@@ -1,20 +1,17 @@
-define(['events',
-        'class',
-        'sail'],
-function(Emitter, clazz, sail) {
+define(['render',
+        'events',
+        'class'],
+function(render, Emitter, clazz) {
   
   function View(el, options) {
     View.super_.call(this);
     
     if (typeof el == 'string') {
-      var $ = sail.$
-        , render = sail.render;
-      
-      var out = render(el, options);
+      var out = render.render(el, options);
       if (typeof out == 'string') {
-        this.el = $(out);
+        this.el = render.$(out);
       } else if (typeof out == 'function') {
-        this.el = $(out(options));
+        this.el = render.$(out(options));
       }
     } else {
       this.el = el;
