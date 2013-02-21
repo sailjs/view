@@ -19,5 +19,14 @@ function(render, Emitter, clazz) {
   }
   clazz.inherits(View, Emitter);
   
+  View.prototype.remove = function() {
+    this.el.remove();
+    return this;
+  }
+  
+  View.prototype.dispose = function() {
+    this.removeAllListeners();
+  }
+  
   return View;
 });
